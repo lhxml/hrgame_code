@@ -1,0 +1,48 @@
+﻿1.Proguard:代码混淆
+2.Steam,飞流
+3.butterknife，eventbus的内存泄漏问题。
+4.java8,
+5.android studio 中的插件。
+6.BroadcastReceiver,sQLite,Handler机制。
+7.Rxjava,Retrofit,RxAndroid,Volley,okhttp的异同点。
+8.经典的设计模式
+9.kotlin,Scala,Groovy,Gradle,响应式编程。
+10.static ,final
+final:
+首先你要理解何谓线程安全，线程安全指对象不被并发写或者写时不能并发读，final变量根本就没有写的操作，怎么会存在线程安全问题？
+11.为什么static不能修饰构造方法：
+构造器是一种特殊的static方法。
+如果是从导致类加载的角度来看，那么算static的，因为访问类的static方法或static属性，或者调用构造函数会导致类被加载。
+如果从static方法内部不能调用非static方法来说，构造器里面又能调用非static方法。
+Thinging in java也说构造器是隐式的static。
+12.几种类加载的方式。
+13.xml解析的几种方式，json解析，jsonObject,jsonArray,protobuf.
+14.多线程
+15.java多态，封装，继承，抽象。
+16.多态：
+  假如你在动物园工作，你一喊，过来，小狮子走过来了，小老虎跑过来了。，
+
+  而狮子和老虎显然都是不同的物种，但是它们都可以响应你的“过来”消息。
+
+  它们身为不同的种类，有着相似的行为，但是又不完全相同，这就是世界的多态性。
+17.java中为什么没有多继承。
+18.静态代码块的用法。
+19.java中的set、get方法的作用：
+封装的一个最主要的用途就在于：数据的安全性。如果像你所说的，所有的属性都用public来修饰，
+在操作性上是可行的。但是这样的数据时非常不安全的。如果设置成了public那么，所有的人都可以访问你的变量。
+20.activity的启动模式以及应用场景。
+handler的原理。
+21.java中的值传递与地址传递。
+22.内部类。
+23.抽象类的作用。
+24.数组与链表的结合产生了哈希表，接口和抽象类结合，产生了优雅的缺省适配模式。
+25.反射。
+26.中介者模式，回调与观察者模式的区别,策略模式。
+27.android三级缓存的原理。
+28.地图sdk,计步算法。
+29.Activity的启动模式。	
+30.ViewHolder的作用。
+31.为什么界面中不能做耗时操作。
+32.android Bitmap内存溢出。
+33.泛型的作用。
+34.android屏幕自适应。工厂模式。回调的几种写法.....
