@@ -46,3 +46,5 @@ handler的原理。
 32.android Bitmap内存溢出。
 33.泛型的作用。
 34.android屏幕自适应。工厂模式。回调的几种写法.....
+35.android的四种加载模式的作用。
+36.hashcode的含义。
