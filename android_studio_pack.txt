@@ -1,0 +1,32 @@
+1.遇到没有jar的形式的包的，可以导出项目的jar，再依赖资源文件。（KProgressHUD）
+2.android studio打包，建立项目Module：
+（1）.
+task clearJar(type: Delete) {
+    delete 'build/outputs/yourname.jar'
+}
+
+task makeJar(type: Copy) {
+    from('build/intermediates/bundles/release/')
+    into('build/outputs/')
+    include('classes.jar')
+    rename ('classes.jar', 'yourname.jar')
+}
+
+makeJar.dependsOn(clearJar, build)
+  (2).android{
+  
+lintOptions {
+        abortOnError false
+    }
+}
+(3).执行terminal语句gradlew makeJar.
+3. aar资源可以解压之后新建libs，project.propertites.
+4.接入sdk的资源的时候，需要修改清单文件中的androidmenifest.xml中修改manifest标签中的包名。、
+用到的application资源可以在项目中新建一个application类。
+5.有时候需要修改libs中的jar的Build path中的位置，置顶。
+6.在Android 2.2版本之前，HttpClient拥有较少的bug，因此使用它是最好的选择。
+  而在Android 2.3版本及以后，HttpURLConnection则是最佳的选择。
+对，async-httpclient作替代。api23就不能用HttpClient.
+7.apkplug框架。
+8.资源文件无法用反射获取id。如果把它copy在assets文件夹下，那么很有可能出现适配问题无法解决。
+9.如果导入的Android studio工程报错，则，先解决switch case ---> if else,之后去除ButterKinfe引用。初始化用findviewById（）来替代。
