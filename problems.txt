@@ -49,3 +49,5 @@ handler的原理。
 35.android的四种加载模式的作用。
 36.hashcode的含义。
 37.持续集成之jenkins
+38.app直播技术。
+39.html5,hybird混合式开发。
