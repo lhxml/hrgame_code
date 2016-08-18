@@ -1,0 +1,13 @@
+
+1.不同的线程访问同一个ThreadLocal的get方法，ThreadLocal会从各自线程中抽出一个数组，
+然后再从数组中根据当前的ThreadLocal的索引去查找出对应的value值。结果可知，不同的
+线程中的数组肯定是不同的，这也就是为什么通过ThreadLocal可以在不同的线程中维护一
+套数据而且还相互不干扰的原因了。
+2.需要注意的是每个Thread中都有一个values对象，这个values对象再按
+ThreadLocal<Looper> sThreadLocal对象在当前线程的values哈希表中找出对应的Looper
+那么这个Looper就对应为当前线程的Looper
+那么使用ThreadLocal有什么好处呢？
+好处是显而易见的，如果用全局的HashMap管理一个Thread对应一个Looper，
+那么增删改某个Looper对象时就需要进行同步操作，这大大增加了系统开销
+而如果有一个ThreadLocal.Values对象存放在Thread里，需要用到时就直接获取，不与其他线程的数据进行交互，
+那么就避免了同步带来的低效率问题，所以这个ThreadLocal正好被应用到了一个Thread对应一个Looper中
