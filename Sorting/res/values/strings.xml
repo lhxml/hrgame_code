@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sorting</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="insert_sort">插入排序</string>
+    <string name="select_sort">选择排序</string>
+    <string name="bubble_sort">冒泡排序</string>
+    <string name="quick_sort">快速排序</string>
+    <string name="merge_sort">归并排序</string>
+    <string name="shell_sort">希尔排序</string>
+    <string name="heap_sort">堆排序</string>
+    
+    <string name="original_sequence">原始序列</string>
+    <string name="sorted_sequence">排序后序列</string>
+</resources>

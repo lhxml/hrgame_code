@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn_sort_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/insert_sort" 
+        />
+
+    <Button
+        android:id="@+id/btn_sort_select"
+        android:layout_below="@id/btn_sort_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_sort" />
+    
+    <Button
+        android:id="@+id/btn_sort_bubble"
+        android:layout_below="@id/btn_sort_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bubble_sort" />
+    
+    <Button
+        android:id="@+id/btn_sort_quick"
+        android:layout_below="@id/btn_sort_bubble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quick_sort" />
+    
+    <Button
+        android:id="@+id/btn_sort_merge"
+        android:layout_below="@id/btn_sort_quick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/merge_sort" />
+    
+    <Button
+        android:id="@+id/btn_sort_shell"
+        android:layout_below="@id/btn_sort_merge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shell_sort" />
+    
+    <Button
+        android:id="@+id/btn_sort_heap"
+        android:layout_below="@id/btn_sort_shell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/heap_sort" />
+    
+    <RelativeLayout 
+        android:id="@+id/orign_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_below="@id/btn_sort_heap"
+        android:background="#FFD700">
+        
+        <TextView 
+            android:id="@+id/txt_orign"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentTop="true"
+        	android:text="@string/original_sequence"
+            />
+        
+        <TextView 
+            android:id="@+id/txt_orign_number"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/txt_orign"
+        	android:textSize="22sp"
+            />        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/sorted_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_below="@id/orign_layout"
+        android:background="#00CD00">
+        
+        <TextView 
+            android:id="@+id/txt_sorted"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentTop="true"
+        	android:text="@string/sorted_sequence"
+            />
+        
+        <TextView 
+            android:id="@+id/txt_sorted_number"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/txt_sorted"
+        	android:textSize="22sp"
+            />        
+    </RelativeLayout>
+    
+    
+</RelativeLayout>
