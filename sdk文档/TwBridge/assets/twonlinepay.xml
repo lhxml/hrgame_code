@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<twonlinepay>
+	<base>
+		
+		<twChanelId>22</twChanelId>
+		<twAppSeverVersion>2.0</twAppSeverVersion>
+		<twSdkVersion>2.1.0</twSdkVersion>
+		<twChannelSdkId>22</twChannelSdkId>
+		<twGoodsVersion>1.0</twGoodsVersion>
+		<NotifyUrl>http://pay.talkyun.com.cn/TalkBackgroundNoticeReceived/servlet/OPPONotice/61</NotifyUrl>
+		<channelClass>com.tw.OnLinePaySdk.SdkOppo.PayToolOppo</channelClass>
+	</base>
+	<channelInit>
+	    <chanelAppid>6k4Ngmz7cTK48kc48woW4oO0O</chanelAppid> <!-- App Key -->
+		<chanelAppkey>90ef460956812a64fab7bCb82f221004</chanelAppkey><!-- App Secret: -->
+		<gameId>3156</gameId><!-- App Id -->
+		<channelSdkVersion>2.0.0</channelSdkVersion>
+	</channelInit>
+</twonlinepay>

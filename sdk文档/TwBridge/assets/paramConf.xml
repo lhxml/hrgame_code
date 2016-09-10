@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paramConf>
+	
+	<base>
+		<channelName>Oppo</channelName>
+		<channelId>115</channelId>
+		<sendUrl>http://jfq.lmegame.com/request/data_collect.php</sendUrl>
+		<isUpdate>false</isUpdate>
+		<twAppId>61</twAppId>
+		<gotyeAppId>51524fcd-d3d5-4746-b340-893f956d6dea</gotyeAppId>
+		<tdAppId>00669A810AC18A341024642CDEBFB0CC</tdAppId>
+	</base>
+	
+</paramConf>

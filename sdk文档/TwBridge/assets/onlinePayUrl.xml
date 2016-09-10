@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<twonlinepay>
+   	<!-- 正式地址 -->
+	<CheckLoginUrl>http://pay.talkyun.com.cn/TalkBackgroundNoticeReceived/servlet/checksession</CheckLoginUrl>
+	<SendLoginInfoUrl>http://pay.talkyun.com.cn/TalkBackgroundNoticeReceived/servlet/sendLoginInfo</SendLoginInfoUrl>
+	<GetOrderMsgUrl>http://pay.talkyun.com.cn/TalkBackgroundNoticeReceived/servlet/pay</GetOrderMsgUrl>
+	<ActivateCode>http://pay.talkyun.com.cn/TalkBackgroundNoticeReceived/servlet/ActivitySubmit</ActivateCode>
+	<GetDownUrl>http://payment.talkyun.com.cn/PayMobilePbs/servlet/game/update</GetDownUrl> 
+	<RecordUserAttrUrl>http://pay.talkyun.com.cn/TalkBackgroundNoticeReceived/servlet/recordUserAttr</RecordUserAttrUrl> 
+	<SendUserInfo_Url>http://pay.talkyun.com.cn/TalkBackgroundNoticeReceived/servlet/recordRoleInfo</SendUserInfo_Url>  
+	
+	
+	<!-- 测试地址
+	<CheckLoginUrl>http://192.168.146.106:8196/TalkBackgroundNoticeReceived/servlet/checksession</CheckLoginUrl>
+	<SendLoginInfoUrl>http://192.168.146.106:8196/TalkBackgroundNoticeReceived/servlet/sendLoginInfo</SendLoginInfoUrl>
+	<GetOrderMsgUrl>http://192.168.146.106:8196/TalkBackgroundNoticeReceived/servlet/pay</GetOrderMsgUrl>
+	<ActivateCode>http://192.168.146.106:8196/TalkBackgroundNoticeReceived/servlet/ActivitySubmit</ActivateCode>
+	<GetDownUrl>http://payment.talkyun.com/PayMobilePbs/servlet/game/update</GetDownUrl> 
+	<RecordUserAttrUrl>http://192.168.146.106:8196/TalkBackgroundNoticeReceived/servlet/recordUserAttr</RecordUserAttrUrl>
+	<SendUserInfo_Url>http://192.168.146.106:8196/TalkBackgroundNoticeReceived/servlet/recordRoleInfo</SendUserInfo_Url>  
+ 	-->
+</twonlinepay>
