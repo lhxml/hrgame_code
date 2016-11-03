@@ -19,6 +19,7 @@ Thinging in java也说构造器是隐式的static。
 12.几种类加载的方式。
 13.xml解析的几种方式，json解析，jsonObject,jsonArray,protobuf.
 14.多线程
+//lxl
 15.java多态，封装，继承，抽象。
 16.多态：
   假如你在动物园工作，你一喊，过来，小狮子走过来了，小老虎跑过来了。，
